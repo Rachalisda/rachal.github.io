@@ -40,7 +40,7 @@ window.onload = function(){
     }catch(e){
         alert("Naw");
     }
-    alert(window.innerHeight);
+
     footer.style.height = window.innerHeight +"px";
   window.addEventListener('mousemove', function(event){
         // Get the mouse position relative to the canvas

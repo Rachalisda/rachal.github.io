@@ -32,6 +32,7 @@ window.onload = function(){
     initCanvas();
     requestAnimationFrame(draw);
     txtScore = document.getElementById('score');
+    var footer = document.getElementById('footer');
     try{
         const folder = new Image();
         folder.src="./folder.svg";
@@ -40,6 +41,7 @@ window.onload = function(){
         alert("Naw");
     }
     
+    footer.style.height = window.innerHeight +"px";
   window.addEventListener('mousemove', function(event){
         // Get the mouse position relative to the canvas
         const rect = canvas.getBoundingClientRect();

@@ -19,6 +19,7 @@ body{
     color: var(--green);
     font-family: RobotoSlab;
     display:block;
+    height: 100%;
     
 }
 body::-webkit-scrollbar{

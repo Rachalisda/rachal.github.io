@@ -25,6 +25,7 @@ var txtScore;
 */
 
 window.onload = function(){
+  alert("New Version");
 // Define an object to be moved
     navBarLinks =["Home", "About","Portfolio","Resume", "Contact"];
     var navBarLinks = String(navBarLinks).toUpperCase().split(",");

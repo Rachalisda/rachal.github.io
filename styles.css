@@ -1,0 +1,142 @@
+:root{
+    --gray: #4C4C50;
+    --dark-gray:#2D2D30; 
+    --green: #62CC45;
+    --dark-green:#1c9260;  
+    --white: #FFF;
+    --black: #000000;
+    --transparent: rgba(0,0,0,0);
+    --doc-height:100%;
+}
+@font-face{
+  font-family: RobotoSlab;
+  src: url("./RobotoSlab-Regular.ttf");
+}
+body{
+    overflow-x: hidden; 
+    margin: 0 0;
+    background-color: var(--dark-gray);
+    background-image: linear-gradient(to bottom, var(--gray), var(--black));
+    color: var(--green);
+    font-family: RobotoSlab;
+    display:block;
+    
+}
+body::-webkit-scrollbar{
+    display: none;
+  }
+p{
+   color: var(--white);
+}
+button{
+      font-size: 0.6em;
+      text-transform: uppercase;
+      border:  0.2em solid var(--green);
+      padding: 0.8em 2em;
+      background-color: var(--transparent);
+      color: var(--green);
+      font-family: RobotoSlab;
+      border-radius: 1em;
+}
+button:hover{
+      background-color: var(--green);
+      color: var(--dark-gray);
+}
+#navbar{
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+    font-size: 0.9em;
+    color: var(--white);
+    position: fixed;
+}
+#navbar ul{
+    padding: 1.5em 2em;
+    margin: 0;
+}
+#navbar ul:hover{
+    padding: 1.5em 3em;
+    color: var(--green);
+    
+}
+#main,footer{
+    padding: 0 4em;
+}
+section,footer{
+    width: 100%;
+    height: auto;
+    margin: 0 0;
+    display: flex;
+    justify-content: center;
+    
+}
+footer{
+    height: 2em;
+    background-color: black;
+}
+#home{
+    flex-direction: column;
+    align-items:center;
+    font-size:1.5em;
+    position: relative;
+  
+}
+#home div{
+    margin: 3em;
+}
+#home strong{
+    font-size: 3em;
+}
+#home button{
+    margin: 1em;
+    display: flex;
+}
+footer{
+    height: 100%;
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+#myCanvas{
+    position: absolute;
+    display: block;
+    z-index: -1;   
+    cursor: none;
+}
+a{
+    color: var(--white);
+    text-decoration: none;   
+}
+a:hover{
+    text-decoration: none;
+}
+
+
+#about{
+    flex-direction: column;
+    padding: 10em 0;
+}
+#skills{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+}
+#skills div{
+    text-align: center;
+    margin: 2em 1em;
+    padding: 1em;
+    border-radius: 10em;
+    background-color: var(--gray);
+    
+}
+#about button{
+    align-self: center;
+    width: 30%;
+}
+
+#portfolio,#resume,#contact{
+    padding: 10em;
+}
